@@ -14,7 +14,7 @@ Mat image;
 Mat gray;
 
 int main(){
-    image=imread("/Users/wellcome/Desktop/PDI_LISTA/image.png",1);
+    image=imread("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_11/image.png",1);
     
     cvtColor(image, gray, CV_RGB2GRAY);
     namedWindow("Image Gray",CV_WINDOW_AUTOSIZE);
@@ -43,7 +43,7 @@ int main(){
     
     namedWindow("Centro",CV_WINDOW_AUTOSIZE);
     imshow("Centro",img);
-    imwrite("/Users/wellcome/Desktop/PDI_LISTA/Centro.jpg",img);
+    imwrite("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_11/Centro.jpg",img);
     
     waitKey();
     

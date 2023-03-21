@@ -12,7 +12,7 @@ using namespace std;
 
 int main(){
     Mat gray,canny;
-    Mat image= imread("/Users/wellcome/Desktop/PDI_LISTA/arara.jpg”,1);
+    Mat image= imread("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_06/arara.jpg”,1);
     imshow("Imagem", image);
     
     cvtColor(image, gray, CV_RGB2GRAY);

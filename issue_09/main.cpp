@@ -15,7 +15,7 @@ Mat gray;
 
 int main()
 {
-    image=imread("/Users/wellcome/Dropbox/WELL_LAB/OpenCvLista/paisagem.jpg",1);
+    image=imread("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_09/paisagem.jpg",1);
     namedWindow("Original Image",CV_WINDOW_AUTOSIZE);
     imshow("Original Image", image);
     
@@ -30,7 +30,7 @@ int main()
             matriz[x][y]=gray.at<Vec3b>(x,y)[0];
         }
     }
-    img=fopen("/Users/wellcome/Dropbox/WELL_LAB/OpenCvLista/Results/image.txt", "w");
+    img=fopen("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_09/Results/image.txt", "w");
     for (int x=0; x<gray.cols; x++) {
         for (int y=0; y<gray.rows; y++) {
             fprintf(img, "%d ",matriz[x][y]);

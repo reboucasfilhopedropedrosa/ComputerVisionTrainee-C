@@ -15,7 +15,7 @@ Mat image_blur;
 
 int main()
 {
-    image_rgb= imread("/Users/iMacPedrosa/Desktop/WELL_PDI/arara.jpg",1);
+    image_rgb= imread("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_05/arara.jpg",1);
     namedWindow("Image RGB",CV_WINDOW_AUTOSIZE);
     imshow("Image RGB", image_rgb);
     
@@ -26,12 +26,12 @@ int main()
     medianBlur(image_gray, image_median, CV_MEDIAN);
     namedWindow("Image Median",CV_WINDOW_AUTOSIZE);
     imshow("Image Median", image_median);
-    imwrite("/Users/iMacPedrosa/Desktop/WELL_PDI/arara_median.jpg", image_median);
+    imwrite("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_05/arara_median.jpg", image_median);
     
     blur(image_gray, image_blur, Size(3,3),Point(-1,-1));
     namedWindow("Image Blur",CV_WINDOW_AUTOSIZE);
     imshow("Image Blur", image_blur);
-    imwrite("/Users/iMacPedrosa/Desktop/WELL_PDI/arara_blur.jpg", image_blur);
+    imwrite("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_05/arara_blur.jpg", image_blur);
     
     waitKey(0);
     

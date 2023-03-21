@@ -16,7 +16,7 @@ Mat image_limi;
 
 int main()
 {
-    image_rgb=imread("/Users/wellcome/Dropbox/WELL_LAB/OpenCvLista/arara.jpg",1);
+    image_rgb=imread("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_07/arara.jpg",1);
     namedWindow("Original Image",CV_WINDOW_AUTOSIZE);
     imshow("Original Image", image_rgb);
     
@@ -27,7 +27,7 @@ int main()
     threshold(image_gray, image_limi, 100, 200, CV_THRESH_BINARY);
     namedWindow("Image Thresholded",CV_WINDOW_AUTOSIZE);
     imshow("Image Thresholded", image_limi);
-    imwrite("/Users/wellcome/Dropbox/WELL_LAB/OpenCvLista/Results/Image_Thresholded.jpg", image_limi);
+    imwrite("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_07/Results/Image_Thresholded.jpg", image_limi);
     
     cvWaitKey(0);
     

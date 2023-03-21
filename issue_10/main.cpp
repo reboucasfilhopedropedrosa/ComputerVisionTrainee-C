@@ -16,7 +16,7 @@ Mat limi;
 
 int main()
 {
-    image=imread("/Users/wellcome/Desktop/PDI_LISTA/paisagem.jpg",1);
+    image=imread("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_10/paisagem.jpg",1);
     namedWindow("Original Image",CV_WINDOW_AUTOSIZE);
     imshow("Original Image", image);
     
@@ -24,7 +24,7 @@ int main()
     namedWindow("Image Gray",CV_WINDOW_AUTOSIZE);
     imshow("Image Gray", gray);
     
-    arquivo=fopen("/Users/wellcome/Desktop/PDI_LISTA/image.txt", "w");
+    arquivo=fopen("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_10/image.txt", "w");
     int x,y;
     Mat_<uchar> img(gray.rows,gray.cols,1);
     for(y = 0; y < gray.rows; y++){

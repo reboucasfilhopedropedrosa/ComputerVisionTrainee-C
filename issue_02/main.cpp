@@ -15,7 +15,7 @@ Mat img_gray;
 
 int main()
 {
-    img_rgb=imread("/Users/wellcome/Dropbox/WELL_LAB/OpenCvLista/arara.jpg",1);
+    img_rgb=imread("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_02/arara.jpg",1);
     
     namedWindow("Original Image", CV_WINDOW_AUTOSIZE);
     imshow("Original Image", img_rgb);
@@ -25,7 +25,7 @@ int main()
     namedWindow("Image Gray", CV_WINDOW_AUTOSIZE);
     imshow("Image Gray", img_gray);
     
-    imwrite("/Users/wellcome/Dropbox/WELL_LAB/OpenCvLista/Results/Floresta_Gray.jpg", img_gray);
+    imwrite("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_02/Results/Floresta_Gray.jpg", img_gray);
     
     waitKey(0);
     

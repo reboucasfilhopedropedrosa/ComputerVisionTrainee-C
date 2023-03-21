@@ -13,12 +13,12 @@ Mat img_rgb;
 
 int main()
 {
-    img_rgb = imread ("/Users/wellcome/Dropbox/WELL_LAB/OpenCvLista/arara.jpg",1);
+    img_rgb = imread ("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_01/arara.jpg",1);
     
     namedWindow("Arara",CV_WINDOW_AUTOSIZE);
     imshow("Arara", img_rgb);
     
-    imwrite("/Users/wellcome/Dropbox/WELL_LAB/OpenCvLista/Results/Original Image.jpg", img_rgb);
+    imwrite("/Users/pedropedrosa/Documents/VSCode/PDI_Trainee_C_Language-master/issue_01/Results/Original Image.jpg", img_rgb);
     
     waitKey(0);
     
